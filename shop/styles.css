@@ -103,11 +103,11 @@ aside section label {
 }
 
 main-content {
-  padding: 1rem;
+   padding: 1rem;
   position: relative;
 }
 
-main-content input {
+ main-content input {
   padding: 1rem;
   width: 100%;
   position: relative;
@@ -120,22 +120,22 @@ main-content .filters {
   gap: 1rem;
 }
 
-main-content .filter {
+ main-content .filter {
   flex: 1;
   text-align: center;
   padding: 0.5rem 1rem;
   border: 1px solid black;
   cursor: pointer;
-}
+} 
 
-main-content .active {
+ main-content .active {
   background-color: black;
   color: white;
 }
 
-main-content section {
+ main-content section {
   margin-top: 1.2rem;
-}
+} 
 
 main-content section title {
   display: block;
@@ -143,28 +143,34 @@ main-content section title {
 }
 
 main-content .items {
-  display: flex;
-  width: auto;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
   overflow-x: scroll;
-  padding: 1rem 0;
-  gap: 1rem;
+  /* padding: 1rem 0; */
+  
 }
 
 main-content .items .item {
   border: 1px solid black;
-  width: 30%;
+  width: 100%;
 }
 
 main-content .items .item img {
-  max-width: 100%;
-}
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding: .5rem;
+}  
 
 main-content .items .item .row {
   display: flex;
   justify-content: space-between;
 }
 
-main-content .items .item .info {
+ main-content .items .item .info {
   padding: 1rem;
 }
 
@@ -189,4 +195,16 @@ main-content .items .item .circle {
   height: 20px;
   border-radius: 100%;
   margin: 0 5px;
+} 
+
+#title{
+  margin-bottom: 2%;
+}
+
+#addBtn{
+  margin-top: 1rem;
+}
+
+#input{
+  padding: 8px;
 }
