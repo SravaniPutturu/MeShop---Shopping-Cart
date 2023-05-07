@@ -28,6 +28,12 @@ var cartProducts = JSON.parse(localStorageCart)
 
 // console.log(allProducts)
 // }
+function signedAndLogin(parram){
+       if(param == 'login'){
+              alert('Your are already in login')
+       }else
+              alert('For signup new account you have to logout from this account')
+}
 
 var total = document.getElementById('total')
 
