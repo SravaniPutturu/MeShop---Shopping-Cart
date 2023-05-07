@@ -67,7 +67,7 @@ p{
           <a href="#">MeShop.</a>
         </div>
         <div class="right">
-          <a href="#">Home</a>
+          <a href="#" onclick="withoutLogin('home')">Home</a>
           <a href="#">Login</a>
           <a href="#" onclick="withoutLogin('signup')">Signup</a>
           <a href="#" onclick="withoutLogin('cart')">My Cart</a>
@@ -90,9 +90,13 @@ p{
 
     function withoutLogin(params) {
      if(params == 'signup'){
-        alert("You have an account dont want to signup")
-     }else{
-        alert("Please login to open your cart")
+        alert("You have an account dont want to signup !")
+     }else if(params == 'home'){
+        alert("Login to continue your shopping !")
+         
+     }
+     else{
+        alert("Please login to open your cart !")
          
      }
     }
