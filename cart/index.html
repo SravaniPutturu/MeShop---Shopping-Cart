@@ -14,9 +14,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-#cart{
-    display : block;  
- }
 a {
     color: white;
     text-decoration: none;
@@ -29,6 +26,10 @@ body {
 #cart{
     display: flex; 
     gap: 1rem; 
+    display : block; 
+}
+#emptyCart{
+     display : none;
 }
 
 nav {
@@ -183,6 +184,10 @@ main-content section title {
 <!-- //https://sravaniputturu.github.io/MeShop---Shopping-Cart/profile.html -->
       </div>
     </nav>
+    <div id="emptyCart"><h2>Your Amazon Cart is empty</h2>
+      <a href="/gp/goldbox/ref=cart_empty_deals">Shop today’s deals</a>
+    </div>
+    
     
     <div id="cart">
       <main>
