@@ -49,17 +49,6 @@ total.innerHTML = `Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 localStorage.setItem('Total Bill',totalCost)
 
-var billStr = localStorage.getItem('Total Bill')
-var bill = JSON.parse(billStr)
-if(bill == 0){
-       alert("Your cart is empty continue shopping")
-       document.getElementById('checkout').style.display = 'none';
-       total.style.display = 'none';
-       setTimeout(()=>{
-              window.location.href = "index.html"
-       },4000)
-}
-
 displayProducts(cartProducts)
 
 function displayProducts(products){
