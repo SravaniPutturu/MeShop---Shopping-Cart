@@ -55,7 +55,9 @@ if(bill == 0){
        alert("Your cart is empty continue shopping")
        document.getElementById('checkout').style.display = 'none';
        total.style.display = 'none';
-       window.location.href = "index.html"
+       setTimeout(()=>{
+              window.location.href = "index.html"
+       },4000)
 }
 
 displayProducts(cartProducts)
