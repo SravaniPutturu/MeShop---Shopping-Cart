@@ -55,7 +55,7 @@ if(bill == 0){
        alert("Your cart is empty continue shopping")
        document.getElementById('checkout').style.display = 'none';
        total.style.display = 'none';
-       window.location.href = ""
+       window.location.href = "https://sravaniputturu.github.io/MeShop---Shopping-Cart/shop/index.html"
 }
 
 displayProducts(cartProducts)
