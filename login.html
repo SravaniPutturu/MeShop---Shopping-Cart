@@ -69,8 +69,8 @@ p{
         <div class="right">
           <a href="#">Home</a>
           <a href="#">Login</a>
-          <a href="#" onclick="withoutLogin()">Signup</a>
-          <a href="#" onclick="withoutLogin()">My Cart</a>
+          <a href="#" onclick="withoutLogin('signup')">Signup</a>
+          <a href="#" onclick="withoutLogin('cart')">My Cart</a>
         </div>
       </nav>
     <form id="myForm">
@@ -89,7 +89,12 @@ p{
 <script>
 
     function withoutLogin(params) {
-      alert("Please login to your acount firstly!!!")
+     if(params == 'signup'){
+        alert("You have an account dont want to signup")
+     }else{
+        alert("Please login to open your cart")
+         
+     }
     }
      
     var form = document.querySelector('#myForm')
