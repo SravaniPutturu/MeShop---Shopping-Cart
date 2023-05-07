@@ -52,9 +52,10 @@ localStorage.setItem('Total Bill',totalCost)
 var checkBillStr = localStorage.getItem('Total Bill')
 var checkBill = JSON.parse(checkBillStr)
 
-if(checkBill == 0){
-       document.getElementById('cart').style.display = "none"
-}
+// if(checkBill == 0){
+//        document.getElementById('cart').style.display = "none"
+//        document.getElementById('revealEmpty').setAttribute('id','')      
+// }
  
 
 displayProducts(cartProducts)
