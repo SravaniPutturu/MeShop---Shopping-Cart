@@ -185,7 +185,7 @@ checkBoxes.forEach(checkbox => {
 
     var title = document.getElementById('title')
 
-    title.innerHTML = `Filtered Cloth's`
+    title.innerHTML = `Filtered Products`
     var productList = document.querySelector(".items");
     productList.innerHTML = "";
     products.forEach((product) => {
@@ -228,7 +228,7 @@ sizeCheckboxes.forEach(checkbox=>{
     
     var title = document.getElementById('title')
 
-    title.innerHTML = `Filtered Cloth's`
+    title.innerHTML = `Filtered Products`
     var productList = document.querySelector(".items");
     productList.innerHTML = "";
     products.forEach((product) => {
